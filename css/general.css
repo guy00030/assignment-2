@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Vendor Prefixes*/
+/*does the same as HTML <meta viewport> tag, but newer*/
+@-moz-viewport { width: device-width; scale:1; } /* Firefox*/
+@-ms-viewport { width: device-width; scale:1; } /*Microsoft*/
+@-o-viewport { width: device-width; scale:1; } /*Opera*/
+@-webkit-viewport { width: device-width; scale:1; } /*Chrome and Safari*/
+@viewport { width: device-width; scale:1; } /*All*/
+
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+header {
+	background-color:#999;
+	height: 6.5rem;
+	width: 100%;
+	z-index: 100;	
+} 
+
+.nav {
+	margin: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.5rem;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	
+	height: 40px;
+	width: 40px;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center; /* shorthand */
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #ccc;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+	display: block;
+	padding: 1rem;
+	
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	border: 1px solid #fff;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #333;
+}
+
+a:link {color:#000;}      /* unvisited link */
+a:visited {color:#000;}  /* visited link */
+a:hover {color:#FFF;}  /* mouse over link */
+a:active {color:#FFF;}  /* selected link */
+
+.logo {
+	width: 15%;
+	float:left;
+	margin: .5rem 0 0 5%;
+}
+
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1rem;
+	margin: 1rem 0 0 5%;
+}
+
+p {
+	margin: 1rem 0 0 5%;
+}
+
+img {
+	width: 100%;
+	margin: 2rem auto;
+}
+	
+table {
+	border: 1px solid;
+	margin: 6rem auto auto 5%;
+	width: 40%;
+ 
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid;
+}
+
+footer {
+	background-color: #999;
+	height: 7rem;
+	width: 100%;
+	bottom: 0;
+}
+
+.bottom p {
+	color: #FFF;
+	padding: .5rem 0 0 2%;
+}
